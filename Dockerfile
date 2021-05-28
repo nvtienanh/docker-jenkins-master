@@ -1,5 +1,5 @@
 
-FROM jenkins/jenkins:alpine
+FROM jenkins/jenkins:lts
 
 # Distributed Builds plugins
 RUN /usr/local/bin/install-plugins.sh ssh-slaves
