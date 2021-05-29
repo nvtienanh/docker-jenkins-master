@@ -1,5 +1,5 @@
 
-FROM jenkins/jenkins:lts
+FROM jenkins/jenkins:alpine
 
 # Distributed Builds plugins
 RUN /usr/local/bin/install-plugins.sh ssh-slaves
@@ -19,6 +19,7 @@ RUN /usr/local/bin/install-plugins.sh simple-theme-plugin
 
 # Scaling
 RUN /usr/local/bin/install-plugins.sh kubernetes
+RUN /usr/local/bin/install-plugins.sh kubernetes-cli
 
 VOLUME /var/jenkins_home
 
