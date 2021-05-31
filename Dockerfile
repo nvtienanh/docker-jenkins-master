@@ -17,9 +17,13 @@ RUN /usr/local/bin/install-plugins.sh htmlpublisher
 RUN /usr/local/bin/install-plugins.sh greenballs
 RUN /usr/local/bin/install-plugins.sh simple-theme-plugin
 
-# Scaling
+
+# Kuberentes
 RUN /usr/local/bin/install-plugins.sh kubernetes
 RUN /usr/local/bin/install-plugins.sh kubernetes-cli
+
+# LDAP
+RUN /usr/local/bin/install-plugins.sh ldap
 
 VOLUME /var/jenkins_home
 
