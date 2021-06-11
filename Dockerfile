@@ -25,6 +25,7 @@ RUN /usr/local/bin/install-plugins.sh kubernetes-cli
 # LDAP
 RUN /usr/local/bin/install-plugins.sh ldap
 RUN /usr/local/bin/install-plugins.sh role-strategy
+RUN /usr/local/bin/install-plugins.sh authorize-project
 
 VOLUME /var/jenkins_home
 
